@@ -69,6 +69,14 @@ Ejemplos de consultas:
 ❯ Administrador: ¿Cuánto espacio hay en el disco principal?
 ```
 
+![Ejemplo de sesión en terminal](img/ejemplo_chat.png)
+
+## Arquitectura
+
+El agente reproduce en código Python el flujo de un workflow de n8n: cada tool equivale a un nodo de acción, el LLM actúa como nodo de decisión, y el bucle REPL reemplaza el trigger de chat de n8n.
+
+![Flujo del agente (basado en workflow n8n)](img/flujo_n8n.png)
+
 ## Herramientas disponibles
 
 | Tool | Comando SSH | Descripción |
